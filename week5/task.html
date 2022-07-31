@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link type="text/css" rel="stylesheet" href="./normalize.css">
+
+  <style>
+    .menu {
+      height: 10vh;
+      background-color: rgb(209, 204, 204);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .basic {
+      height: 160px;
+      display: flex;
+      justify-content: center;
+    }
+
+    section {
+      float: left;
+      width: 70%;
+      height: 400px;
+      background-color: rgb(241, 215, 240);
+    }
+
+    .mainlist {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      margin: 5px;
+    }
+
+
+    aside {
+      float: right;
+      width: 30%;
+      height: 400px;
+      margin: 0%;
+      background-color: rgb(185, 238, 220);
+      display: flex;
+      justify-content: center;
+    }
+
+    .mainlist_a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 5px;
+      margin: 10px;
+      background-color: white;
+      height: 60px;
+      width: 599px;
+    }
+
+    .mainlist_b {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      margin: 10px;
+      background-color: white;
+      height: 60px;
+      width: 599px;
+    }
+
+    .mainlist_c {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      margin: 10px;
+      background-color: white;
+      height: 60px;
+      width: 1900px;
+    }
+
+    footer {
+      clear: both;
+      background-color: rgb(212, 212, 228);
+    }
+
+    .menu1 {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      padding: 10px;
+      list-style-type: none;
+    }
+
+    .list2 {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 5px;
+      margin: 10px;
+      list-style-type: none;
+    }
+
+    .list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      margin: 5px;
+      background-color: white;
+      height: 60px;
+      width: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="menu">
+    <h1>Шапка страницы</h1>
+  </header>
+
+  <section>
+    <h2 class="basic">Основная часть</h2>
+    <div>
+      <ul class="list2">
+        <li class="mainlist_a">Еще 1</li>
+        <li class="mainlist_b">Еще 2</li>
+        <li class="mainlist_c">Еще 3</li>
+      </ul>
+    </div>
+  </section>
+
+  <aside>
+    <h2>Боковая область</h2>
+  </aside>
+
+  <footer>
+    <ul class="menu1">
+      <li class="list">Секция футера 1</li>
+      <li class="list">Секция футера 2</li>
+      <li class="list">Секция футера 3</li>
+      <li class="list">Секция футера 4</li>
+    </ul>
+  </footer>
+</body>
+
+</html>
