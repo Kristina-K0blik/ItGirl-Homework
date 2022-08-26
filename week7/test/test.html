@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background: #8ae4de;
+            grid-area: header;
+        }
+
+        .sidebar {
+            background: #e7b394;
+            grid-area: sidebar;
+        }
+
+        .main {
+            background: #6cac56;
+            grid-area: main;
+        }
+
+        .footer {
+            background: #73b1e4;
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            height: 90vh;
+            width: 100vw;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 15% 1fr 15%;
+            grid-template-areas:
+                "header header header header"
+                "sidebar main main main "
+                "footer footer footer footer";
+        }
+
+        .nav-item {
+            padding: 5px;
+            font-size: 2em;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            width: 95%;
+        }
+
+        .pict {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .pictContainer {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Гриды</h1>
+    <div class="container">
+        <header class="header">Header
+            <nav class="menu">
+                <span class="nav-item">Menu1</span>
+                <span class="nav-item">Menu2</span>
+                <span class="nav-item">Menu3</span>
+            </nav>
+        </header>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="main">content
+            <div class="pictContainer">
+                <img src="/download.jpeg" alt="mountains" class="pict">
+            </div>
+        </main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+
+</html>

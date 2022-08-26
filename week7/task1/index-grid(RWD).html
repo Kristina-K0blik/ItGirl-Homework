@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        .header {
+            display: grid;
+            background-color: rgb(211, 198, 198);
+            grid-column: 1/4;
+            font-size: 1.5em
+        }
+
+        .main {
+            display: grid;
+            background-color: rgb(248, 220, 183);
+            grid-area: main;
+            padding: 0 0 3% 0;
+        }
+
+        .title {
+            font-size: 1.5em
+        }
+
+        .cell {
+            display: grid;
+            align-items: flex-end;
+
+        }
+
+        .sidebar {
+            background-color: rgb(154, 231, 167);
+            display: grid;
+            grid-area: sidebar;
+            font-size: 1.5em
+        }
+
+        .footer {
+            background-color: rgb(211, 98, 198);
+            grid-column: 1/4;
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr) 1fr;
+            grid-template-rows: 0.3fr 3fr 0.3fr;
+            height: 90vh;
+            grid-template-areas:
+                "header header header"
+                "main main sidebar"
+                "footer footer footer"
+        }
+
+        .cell-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "list1 list2"
+                "list3 list3 ";
+            grid-gap: 2%;
+            border: 2%;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1%;
+            align-self: end;
+        }
+
+        .cell1,
+        .cell2,
+        .cell3 {
+            background-color: white;
+            font-weight: bolder;
+            text-align: center;
+            padding: 1.5em;
+            margin: 1%;
+            font-size: 1em
+        }
+
+        .footer-1,
+        .footer-2,
+        .footer-3,
+        .footer-4 {
+            background-color: white;
+            font-weight: bolder;
+            text-align: center;
+            padding: 1em;
+            margin: 1em;
+            font-size: 1em;
+        }
+
+        .cell1 {
+            grid-area: list1;
+        }
+
+        .cell2 {
+            grid-area: list2;
+        }
+
+        .cell3 {
+            grid-area: list3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Гриды</h1>
+    <div class="container">
+        <header class="header">
+            <h2>Шапка страницы</h2>
+        </header>
+        <main class="main">
+            <div class="title">
+                <h2>Основная часть</h2>
+            </div>
+            <div class="cell">
+                <div class="cell-list">
+                    <div class="cell1">Еще 1</div>
+                    <div class="cell2">Еще 2</div>
+                    <div class="cell3">Еще 3</div>
+                </div>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h3>Боковая область</h3>
+        </aside>
+        <footer class="footer">
+            <div class="footer-1">Еще 1</div>
+            <div class="footer-2">Еще 1</div>
+            <div class="footer-3">Еще 1</div>
+            <div class="footer-4">Еще 1</div>
+        </footer>
+    </div>
+</body>
+
+</html>
